@@ -6,11 +6,6 @@ from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import GridSearchCV
 from xgboost import XGBClassifier
 
-
-
-
-
-
 def LogisticRegressionTest(model, test):
     predictions = model.predict(test)
     return predictions
@@ -180,6 +175,7 @@ Export(xgbpredictions, dftest)
     plt.xlabel("Feature Importance")
     plt.title("Random Forest Feature Importance")
     plt.show()'''
+
 
 
 
